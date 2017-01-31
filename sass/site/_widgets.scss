@@ -1,0 +1,12 @@
+.widget {
+	margin: 0 0 2em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	#wp-calendar {
+		width: 100%;
+	}
+}

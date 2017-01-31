@@ -1,0 +1,21 @@
+{
+  "name": "StrapPress",
+  "description": "Bootstrap 4 WordPress Theme",
+  "main": "",
+  "authors": [
+    "Brad Williams"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "^4.7.0"
+  }
+}

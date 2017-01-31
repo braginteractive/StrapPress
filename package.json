@@ -1,0 +1,25 @@
+{
+  "name": "StrapPress",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 WordPress Theme",
+  "main": "",
+  "author": "Brad Williams",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "critical": "^0.8.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-bower": "0.0.10",
+    "gulp-imageoptim": "^1.0.8",
+    "gulp-include": "^1.1.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.2.4",
+    "gulp-zip": "^3.2.0",
+    "jshint-stylish": "^1.0.2"
+  }
+}
