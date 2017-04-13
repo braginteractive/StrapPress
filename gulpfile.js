@@ -128,7 +128,7 @@ options.sassmin = {
 gulp.task('sass', function() {
     return gulp.src('./sass/style.scss')
         .pipe(plumber())
-        .pipe(sass(options.sass))
+        .pipe(sass(options.sass).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest('.'))
         .pipe(browserSync.reload({stream: true}))
@@ -139,7 +139,7 @@ gulp.task('sass', function() {
 gulp.task('sass-min', function() {
     return gulp.src('./sass/style.scss')
         .pipe(plumber())
-        .pipe(sass(options.sassmin))
+        .pipe(sass(options.sassmin).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(rename( { suffix: '.min' } ) )
         .pipe(gulp.dest('.'))

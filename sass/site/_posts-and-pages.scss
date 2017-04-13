@@ -18,22 +18,8 @@
 
 /* Posts Navigation */
 .nav-links {
-	@include make-row();
-}
-
-.nav-previous,
-.nav-next {
-	@include make-col-ready();
-	@include make-col(6);
-}
-
-.nav-previous {
-	@include make-col-push(6);
-	text-align: right;
-}
-
-.nav-next {
-	@include make-col-pull(6);
+	display: flex;
+	justify-content: space-between;
 }
 
 /* Screenreaders */
