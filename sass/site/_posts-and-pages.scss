@@ -14,6 +14,48 @@
 
 .post {
 	margin-bottom: 4em;
+	padding-bottom: 1em;
+}
+
+.post-thumbnail {
+	margin-bottom: 1em;
+}
+
+.entry-meta,
+.entry-footer {
+  font-size: .75rem;
+  margin: .75em 0 2em;
+
+  .fa {
+    color: $gray-light;
+    margin-right: .3em;
+  }
+  span {
+    margin: 0 1.5em .4em 0;
+    display: inline-block;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $gray-light;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+	.edit-link {
+		.btn {
+      		color: $white;
+
+      	&:hover {
+	        color: $white
+	    }
+	}
+  }
 }
 
 /* Posts Navigation */

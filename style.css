@@ -9171,7 +9171,40 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   display: inline; }
 
 .post {
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  padding-bottom: 1em; }
+
+.post-thumbnail {
+  margin-bottom: 1em; }
+
+.entry-meta,
+.entry-footer {
+  font-size: .75rem;
+  margin: .75em 0 2em; }
+  .entry-meta .fa,
+  .entry-footer .fa {
+    color: #636c72;
+    margin-right: .3em; }
+  .entry-meta span,
+  .entry-footer span {
+    margin: 0 1.5em .4em 0;
+    display: inline-block; }
+    .entry-meta span:last-child,
+    .entry-footer span:last-child {
+      margin: 0; }
+    .entry-meta span a,
+    .entry-footer span a {
+      text-decoration: none;
+      color: #636c72; }
+      .entry-meta span a:hover,
+      .entry-footer span a:hover {
+        color: #464a4c; }
+  .entry-meta .edit-link .btn,
+  .entry-footer .edit-link .btn {
+    color: #fff; }
+    .entry-meta .edit-link .btn:hover,
+    .entry-footer .edit-link .btn:hover {
+      color: #fff; }
 
 /* Posts Navigation */
 .nav-links {
