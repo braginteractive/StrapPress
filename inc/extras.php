@@ -37,3 +37,13 @@ function strappress_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'strappress_pingback_header' );
+
+
+/**
+ * Add Bootstrap button classes to tag cloud
+ */
+function strappress_tag_cloud_btn( $return ) {
+	$return = str_replace('<a', '<a class="btn btn-secondary btn-sm"', $return );
+	return $return;
+}
+add_filter( 'wp_tag_cloud', 'strappress_tag_cloud_btn' );

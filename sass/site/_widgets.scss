@@ -9,4 +9,28 @@
 	#wp-calendar {
 		width: 100%;
 	}
+
+	.card-header {
+		font-size: 1.25rem;
+	}
+
+	.tagcloud,
+	.textwidget,
+	.calendar_wrap {
+		padding: $card-spacer-x;
+	}
+
+	ul{
+		padding-top: $card-spacer-y;
+		padding-bottom: $card-spacer-y;
+		margin-bottom: 0;
+	}
+
+	&.widget_search {
+	  border: none;
+	}
+
+	.tagcloud a {
+		margin-bottom: .5rem;
+	}
 }

@@ -9264,6 +9264,20 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     max-width: 100%; }
   .widget #wp-calendar {
     width: 100%; }
+  .widget .card-header {
+    font-size: 1.25rem; }
+  .widget .tagcloud,
+  .widget .textwidget,
+  .widget .calendar_wrap {
+    padding: 1.25rem; }
+  .widget ul {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0; }
+  .widget.widget_search {
+    border: none; }
+  .widget .tagcloud a {
+    margin-bottom: .5rem; }
 
 /*--------------------------------------------------------------
 ## Header
