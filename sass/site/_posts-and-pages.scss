@@ -27,7 +27,7 @@
   margin: .75em 0 2em;
 
   .fa {
-    color: $gray-light;
+    color: $gray-600;
     margin-right: .3em;
   }
   span {
@@ -40,10 +40,10 @@
 
     a {
       text-decoration: none;
-      color: $gray-light;
+      color: $gray-600;
 
       &:hover {
-        color: $gray;
+        color: $gray-900;
       }
     }
   }
