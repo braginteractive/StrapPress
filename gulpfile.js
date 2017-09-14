@@ -11,13 +11,12 @@ var gulp = require( 'gulp' ),
   include = require( 'gulp-include' ),
   sass = require( 'gulp-sass' ),
   imageoptim = require('gulp-imageoptim'),
-  bower = require('gulp-bower'),
   browserSync = require('browser-sync').create(),
   critical = require('critical'),
   zip = require('gulp-zip');
 
 var config = {
-     bowerDir: './bower_components' 
+     nodeDir: './node_modules' 
 }
 
 
@@ -59,18 +58,6 @@ gulp.task('zip', function () {
   .pipe(zip('strappress.zip'))
   .pipe(gulp.dest('.'));
 });
-
-// Install all Bower components
-gulp.task('bower', function() {
-  return bower()
-    .pipe(gulp.dest(config.bowerDir))
-});
-
-gulp.task('icons', function() { 
-    return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*') 
-      .pipe(gulp.dest('./fonts')); 
-});
- 
  
 // Jshint outputs any kind of javascript problems you might have
 // Only checks javascript files inside /src directory
@@ -107,8 +94,7 @@ options.sass = {
   noCache: true,
   //imagePath: 'assets/img',
   includePaths: [
-    config.bowerDir + '/bootstrap/scss',
-    config.bowerDir + '/font-awesome/scss',
+    config.nodeDir + '/bootstrap/scss',
   ]
 };
 
@@ -119,8 +105,7 @@ options.sassmin = {
   outputStyle: 'compressed',
   //imagePath: 'assets/img',
   includePaths: [
-    config.bowerDir + '/bootstrap/scss',
-    config.bowerDir + '/font-awesome/scss',
+    config.nodeDir + '/bootstrap/scss',
   ]
 };
 
