@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # Default Bootstrap Colors
 --------------------------------------------------------------*/
-// Start with assigning color names to specific hex values.
 // $white:  #fff !default;
 // $gray-100: #f8f9fa !default;
 // $gray-200: #e9ecef !default;
@@ -14,6 +13,17 @@
 // $gray-900: #212529 !default;
 // $black:  #000 !default;
 
+// $grays: (
+//   100: $gray-100,
+//   200: $gray-200,
+//   300: $gray-300,
+//   400: $gray-400,
+//   500: $gray-500,
+//   600: $gray-600,
+//   700: $gray-700,
+//   800: $gray-800,
+//   900: $gray-900
+// ) !default;
 
 // $blue:    #007bff !default;
 // $indigo:  #6610f2 !default;
@@ -26,10 +36,29 @@
 // $teal:    #20c997 !default;
 // $cyan:    #17a2b8 !default;
 
-// Reassign color vars to semantic color scheme
-// $brand-primary:             $blue !default;
-// $brand-success:             $green !default;
-// $brand-info:                $teal !default;
-// $brand-warning:             $orange !default;
-// $brand-danger:              $red !default;
-// $brand-inverse:             $gray-dark !default;
+// $colors: (
+//   blue: $blue,
+//   indigo: $indigo,
+//   purple: $purple,
+//   pink: $pink,
+//   red: $red,
+//   orange: $orange,
+//   yellow: $yellow,
+//   green: $green,
+//   teal: $teal,
+//   cyan: $cyan,
+//   white: $white,
+//   gray: $gray-600,
+//   gray-dark: $gray-800
+// ) !default;
+
+// $theme-colors: (
+//   primary: $blue,
+//   secondary: $gray-600,
+//   success: $green,
+//   info: $cyan,
+//   warning: $yellow,
+//   danger: $red,
+//   light: $gray-100,
+//   dark: $gray-800
+// ) !default;
