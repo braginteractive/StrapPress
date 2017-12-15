@@ -17,16 +17,17 @@ add_action( 'wp_enqueue_scripts', 'strappress_scripts' );
 
 
 /**
- * Filter the HTML script tag of `strappress-fa` script to add `defer` attribute.
+ * Filter the HTML script tag of `leadgenwp-fa` script to add `defer` attribute.
  *
- * @param string $tag    The <script> tag for the enqueued script.
- * @param string $handle The script's registered handle.
- *
- * @return   Filtered HTML script tag.
- */
-function strappress__defer_attribute( $tag, $handle ) {
-    if ( 'strappress-fa' === $handle ) {
-        return str_replace( ' src', ' defer src', $tag );
+*/
+function strappress_defer_scripts( $tag, $handle, $src ) {
+	// The handles of the enqueued scripts we want to defer
+	$defer_scripts = array( 
+		'strappress-fa'
+	);
+    if ( in_array( $handle, $defer_scripts ) ) {
+        return '<script src="' . $src . '" defer></script>';
     }
+    return $tag;
 }
-add_filter( 'script_loader_tag', 'strappress__defer_attribute', 10, 2 );
+add_filter( 'script_loader_tag', 'strappress_defer_scripts', 10, 3 );
