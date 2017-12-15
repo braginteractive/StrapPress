@@ -6796,8 +6796,8 @@ a.text-dark:focus, a.text-dark:hover {
 .entry-footer {
   font-size: .75rem;
   margin: .75em 0 2em; }
-  .entry-meta .fa,
-  .entry-footer .fa {
+  .entry-meta .svg-inline--fa,
+  .entry-footer .svg-inline--fa {
     color: #868e96;
     margin-right: .3em; }
   .entry-meta span,
