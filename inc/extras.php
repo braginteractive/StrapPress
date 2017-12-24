@@ -53,6 +53,9 @@ add_filter( 'wp_tag_cloud', 'strappress_tag_cloud_btn' );
  * Customize the Read More Button
 **/
 function strappress_modify_read_more_link() {
-    return '<a class="more-link btn btn-sm btn-secondary" href="' . get_permalink() . '">Read More</a>';
+    return sprintf( '<a class="more-link btn btn-sm btn-secondary" href="%1$s">%2$s</a>',
+        get_permalink(),
+        __( 'Read More', 'strappress' )
+    );
 }
 add_filter( 'the_content_more_link', 'strappress_modify_read_more_link' );
