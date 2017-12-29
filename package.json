@@ -5,8 +5,8 @@
   "main": "",
   "author": "Brad Williams",
   "devDependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "browser-sync": "^2.18.13",
+    "bootstrap": "^4.0.0-beta.3",
+    "browser-sync": "^2.23.1",
     "critical": "^0.8.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.2.0",
@@ -21,6 +21,6 @@
     "gulp-watch": "^4.2.4",
     "gulp-zip": "^3.2.0",
     "jshint-stylish": "^1.0.2",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.13.0"
   }
 }
