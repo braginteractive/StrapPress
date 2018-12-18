@@ -1,0 +1,14 @@
+/*--------------------------------------------------------------
+# Embeds
+--------------------------------------------------------------*/
+
+// YouTube
+.wp-block-embed-youtube {
+  .wp-block-embed__wrapper {
+    @extend .embed-responsive;
+    @extend .embed-responsive-16by9;
+    iframe {
+      @extend .embed-responsive-item;
+    }
+  }
+}

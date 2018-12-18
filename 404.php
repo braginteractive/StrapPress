@@ -9,60 +9,58 @@
 
 get_header(); ?>
 
-	<div class="container">
-		<div class="row">
-			<div id="primary" class="content-area">
-				<main id="main" class="site-main" role="main">
 
-					<section class="error-404 not-found">
-						<header class="page-header">
-							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'strappress' ); ?></h1>
-						</header><!-- .page-header -->
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-						<div class="page-content">
-							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'strappress' ); ?></p>
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'strappress' ); ?></h1>
+				</header><!-- .page-header -->
 
-							<?php
-								get_search_form();
+				<div class="page-content">
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'strappress' ); ?></p>
 
-								the_widget( 'WP_Widget_Recent_Posts' );
+					<?php
+						get_search_form();
 
-								// Only show the widget if site has multiple categories.
-								if ( strappress_categorized_blog() ) :
-							?>
+						the_widget( 'WP_Widget_Recent_Posts' );
 
-							<div class="widget widget_categories">
-								<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'strappress' ); ?></h2>
-								<ul>
-								<?php
-									wp_list_categories( array(
-										'orderby'    => 'count',
-										'order'      => 'DESC',
-										'show_count' => 1,
-										'title_li'   => '',
-										'number'     => 10,
-									) );
-								?>
-								</ul>
-							</div><!-- .widget -->
+						// Only show the widget if site has multiple categories.
+						if ( strappress_categorized_blog() ) :
+					?>
 
-							<?php
-								endif;
+					<div class="widget widget_categories">
+						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'strappress' ); ?></h2>
+						<ul>
+						<?php
+							wp_list_categories( array(
+								'orderby'    => 'count',
+								'order'      => 'DESC',
+								'show_count' => 1,
+								'title_li'   => '',
+								'number'     => 10,
+							) );
+						?>
+						</ul>
+					</div><!-- .widget -->
 
-								/* translators: %1$s: smiley */
-								$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'strappress' ), convert_smilies( ':)' ) ) . '</p>';
-								the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+					<?php
+						endif;
 
-								the_widget( 'WP_Widget_Tag_Cloud' );
-							?>
+						/* translators: %1$s: smiley */
+						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'strappress' ), convert_smilies( ':)' ) ) . '</p>';
+						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
-						</div><!-- .page-content -->
-					</section><!-- .error-404 -->
+						the_widget( 'WP_Widget_Tag_Cloud' );
+					?>
 
-				</main><!-- #main -->
-			</div><!-- #primary -->
-		</div><!--  .row -->
-	</div><!--  .container -->
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+		
 
 <?php
 get_footer();

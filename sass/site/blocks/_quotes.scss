@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Blockquotes & Pull Quotes
+--------------------------------------------------------------*/
+
+.wp-block-quote {
+  border-left: 2px solid $primary;
+  padding-left: 1rem;
+
+  cite {
+    font-size: 80%;
+    color: $gray-600;
+  }
+
+  &.is-style-large {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+.wp-block-pullquote {
+  border-top: 3px solid $gray-600;
+  border-bottom: 3px solid $gray-600;
+
+  &.is-style-solid-color {
+    border: 0;
+  }
+}

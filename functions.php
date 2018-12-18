@@ -67,6 +67,68 @@ function strappress_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	/**
+	 * Add wide image support
+	 */
+	add_theme_support( 'align-wide' );
+
+	// Add support for responsive embedded content.
+	add_theme_support( 'responsive-embeds' );
+
+	// Editor color palette.
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => __( 'Primary', 'strappress' ),
+				'slug'  => 'primary',
+				'color' => '#007bff',
+			),
+			array(
+				'name'  => __( 'Secondary', 'strappress' ),
+				'slug'  => 'secondary',
+				'color' => '#6c757d',
+			),
+			array(
+				'name'  => __( 'Success', 'strappress' ),
+				'slug'  => 'success',
+				'color' => '#28a745',
+			),
+			array(
+				'name'  => __( 'Danger', 'strappress' ),
+				'slug'  => 'danger',
+				'color' => '#dc3545',
+			),
+			array(
+				'name'  => __( 'Warning', 'strappress' ),
+				'slug'  => 'warning',
+				'color' => '#ffc107',
+			),
+			array(
+				'name'  => __( 'Info', 'strappress' ),
+				'slug'  => 'info',
+				'color' => '#17a2b8',
+			),
+			array(
+				'name'  => __( 'Dark Gray', 'strappress' ),
+				'slug'  => 'dark',
+				'color' => '#343a40',
+			),
+			array(
+				'name'  => __( 'Light Gray', 'strappress' ),
+				'slug'  => 'light',
+				'color' => '#f8f9fa',
+			),
+			array(
+				'name'  => __( 'White', 'strappress' ),
+				'slug'  => 'white',
+				'color' => '#FFF',
+			),
+		)
+	);
+
+	
 }
 endif;
 add_action( 'after_setup_theme', 'strappress_setup' );

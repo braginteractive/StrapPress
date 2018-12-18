@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# Separators
+--------------------------------------------------------------*/
+
+.wp-block-separator {
+  background-color: $gray-600;
+  border: 0;
+  height: 2px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  max-width: 10rem;
+  text-align: center;
+
+  &.is-style-wide {
+    max-width: 100%;
+  }
+}
