@@ -68,6 +68,27 @@
   }
 }
 
+/* Posts Pagination */
+.pagination {
+  justify-content: center;
+
+  .page-numbers {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0 0.2rem;
+    width: 2rem;
+    text-align: center;
+
+    &.current,
+    &:hover {
+      background-color: $primary;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
 /* Posts Navigation */
 .nav-links {
   clear: both;

@@ -7576,6 +7576,23 @@ a.text-white:hover, a.text-white:focus {
     .entry-footer .edit-link .btn:hover {
       color: #fff; }
 
+/* Posts Pagination */
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination .page-numbers {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0 0.2rem;
+    width: 2rem;
+    text-align: center; }
+    .pagination .page-numbers.current, .pagination .page-numbers:hover {
+      background-color: #007bff;
+      color: white;
+      text-decoration: none; }
+
 /* Posts Navigation */
 .nav-links {
   clear: both;
