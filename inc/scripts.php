@@ -7,7 +7,7 @@ function strappress_scripts() {
 
 	wp_enqueue_script( 'strappress-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), ' ', true );
 
-	wp_enqueue_script( 'strappress-fa', '//use.fontawesome.com/releases/v5.2.0/js/all.js', array(), '5.2.0' );
+	wp_enqueue_script( 'strappress-fa', '//use.fontawesome.com/releases/v5.6.1/js/all.js', array(), '5.6.1' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
