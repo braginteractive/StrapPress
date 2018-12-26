@@ -1,36 +1,36 @@
 .widget {
-	margin: 0 0 2em;
+  margin: 0 0 2rem;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
 
-	#wp-calendar {
-		width: 100%;
-	}
+  #wp-calendar {
+    width: 100%;
+  }
 
-	.card-header {
-		font-size: 1.25rem;
-	}
+  .card-header {
+    font-size: 1.25rem;
+  }
 
-	.tagcloud,
-	.textwidget,
-	.calendar_wrap {
-		padding: $card-spacer-x;
-	}
+  .tagcloud,
+  .textwidget,
+  .calendar_wrap {
+    padding: $card-spacer-x;
+  }
 
-	ul{
-		padding-top: $card-spacer-y;
-		padding-bottom: $card-spacer-y;
-		margin-bottom: 0;
-	}
+  ul {
+    padding-top: $card-spacer-y;
+    padding-bottom: $card-spacer-y;
+    margin-bottom: 0;
+  }
 
-	&.widget_search {
-	  border: none;
-	}
+  &.widget_search {
+    border: none;
+  }
 
-	.tagcloud a {
-		margin-bottom: .5rem;
-	}
+  .tagcloud a {
+    margin-bottom: 0.5rem;
+  }
 }

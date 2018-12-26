@@ -175,3 +175,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Bootstrap Walker.
  */
 require get_template_directory() . '/inc/bootstrap-walker.php';
+
+/**
+ * Plugins Needed
+ */
+require get_template_directory() . '/inc/plugin-activation/install-plugins.php';
+
+/**
+ * Metabox.
+ */
+require get_template_directory() . '/inc/metabox.php';

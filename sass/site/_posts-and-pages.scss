@@ -13,8 +13,8 @@
 }
 
 .post {
-  margin-bottom: 4em;
-  padding-bottom: 1em;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .entry-title {
@@ -28,20 +28,34 @@
 }
 
 .post-thumbnail {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
+  &.alignfull {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      top: 0;
+      transform: none;
+      width: 100%;
+      margin-top: -3rem;
+    }
+  }
 }
 
 .entry-meta,
 .entry-footer {
   font-size: 0.75rem;
-  margin: 0.75em 0 2em;
+  margin: 0.75rem 0 2rem;
 
   .svg-inline--fa {
     color: $gray-600;
-    margin-right: 0.3em;
+    margin-right: 0.3rem;
   }
   span {
-    margin: 0 1.5em 0.4em 0;
+    margin: 0 1.5rem 0.4rem 0;
     display: inline-block;
 
     &:last-child {
