@@ -67,14 +67,15 @@ function strappress_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
-
-	/**
-	 * Add wide image support
-	 */
+	
+	// Add wide image support
 	add_theme_support( 'align-wide' );
 
 	// Add support for responsive embedded content.
 	add_theme_support( 'responsive-embeds' );
+
+	// Add editor styles
+	//add_theme_support('editor-styles');
 
 	// Editor color palette.
 	add_theme_support(
