@@ -59,11 +59,11 @@ function strappress_register_required_plugins() {
 	 */
 	$plugins = array(
 
-		array(
-			'name'      => 'Kirki',
-			'slug'      => 'kirki',
-			'required'  => true,
-		),
+		// array(
+		// 	'name'      => 'Kirki',
+		// 	'slug'      => 'kirki',
+		// 	'required'  => true,
+		// ),
 
 		// This is an example of how to include a plugin from the WordPress Plugin Repository.
 		array(
